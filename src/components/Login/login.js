@@ -1,18 +1,45 @@
-import { Grid, Icon, Paper } from "@mui/material";
+import { Button, Container, Grid, Icon, InputAdornment, Paper } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
-import HttpsIcon from '@mui/icons-material/Https';
+import LockIcon from '@mui/icons-material/Lock';
+import classNames from "classnames";
 import React from "react";
+import TextField from '@material-ui/core/TextField';
+import styles from '../Login/Login.module.scss'
 
-const Login = () => {
+
+
+export default function LoginInput() {
+
+    
     return (
-        <Grid>
-            <Paper>
-                <form>
-                   <EmailIcon /><input  type="text" ></input>
-                    <input type="password" ></input>
-                </form>
-            </Paper>
-        </Grid>
-    )
+        <form className={classNames(styles.form)} noValidate autoComplete="on">
+            <div>
+                <TextField className={classNames(styles.text)}
+                    id="input-email"
+                    type="text"
+                    InputProps={{
+                        startAdornment: (
+                            <InputAdornment position="start">
+                                <EmailIcon />
+                            </InputAdornment>
+                        ),
+                    }}
+                />
+                <TextField className={classNames(styles.pwd)}
+                id="input-email"
+                type="text"
+                InputProps={{
+                    startAdornment: (
+                            <InputAdornment position="start">
+                                <LockIcon />
+                            </InputAdornment>
+                        ),
+                    }}
+                    />
+                
+                <Button className={classNames(styles.button)} type="login" variant="contained">Login</Button>
+
+            </div>
+        </form>
+    );
 }
-export default Login
