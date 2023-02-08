@@ -4,7 +4,7 @@ import LockIcon from '@mui/icons-material/Lock';
 import classNames from "classnames";
 import React from "react";
 import TextField from '@material-ui/core/TextField';
-import styles from '../Login/Login.module.scss'
+import styles from './Login.module.scss'
 
 
 
