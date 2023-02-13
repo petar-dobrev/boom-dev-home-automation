@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './LoginPage.module.scss'
 import { Paper, Container } from "@mui/material";
-import Login from "./Login";
+import Login from "../../src/components/login/Login";
 import classNames from "classnames";
 
 export default function LoginPage() {
