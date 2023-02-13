@@ -16,8 +16,8 @@ export default function Login() {
 
 
     return (
-        <div className={classNames(styles.login)}>
-            <form className={classNames(styles.form)} noValidate autoComplete="on">
+        <div className={classNames(styles.login-form)}>
+            <form className={classNames(styles.login-form)} noValidate autoComplete="on">
                 <TextField className={classNames(styles.text)}
                     id="input-email"
                     type="text"
