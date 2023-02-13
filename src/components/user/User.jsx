@@ -4,7 +4,7 @@ import React from "react";
 import styles from './User.module.scss'
 export default function User(props) {
 
-    const { avatar, name, size } = props;
+    let user = { avatar:"/public/avatar.png", name: 'Arif', size:'height: 15px, width: 24px' };
 
     return (
         <div className={classNames(styles["user-container"])}>
@@ -15,12 +15,12 @@ export default function User(props) {
                     justify="space-between"
                     alignItems="center">
                     <Avatar
-                        src={avatar}
-                        size={size}>
+                        img={user.avatar}
+                        sizes={user.size}>
 
                     </Avatar>
                     <Typography>
-                        {name}
+                        {user.name}
                     </Typography>
                 </Grid>
             </Container>
