@@ -5,21 +5,13 @@ import classNames from "classnames";
 import React from "react";
 import TextField from '@material-ui/core/TextField';
 import styles from './Login.module.scss'
+import ReactDOM  from "react-dom";
 
 
-
-React.createElement('div', {className: "login-form"}, [
-        <Login   />
-     ])
-
-
-export default function Login() {
-
-    
-
+export default function Login()  {
 
     return (
-        <div className={classNames(styles.login)}>
+        <div className={classNames(styles["login-form"])}>
             <form className={classNames(styles.login)} noValidate autoComplete="on">
                 <TextField className={classNames(styles.text)}
                     id="input-email"
@@ -63,3 +55,4 @@ export default function Login() {
         </div>
     );
 }
+
