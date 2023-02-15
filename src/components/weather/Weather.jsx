@@ -8,7 +8,7 @@ export default function Weather({degrees, type}) {
         <div className={classNames(styles["weather-wrapper"])}>
             <Typography>
                 <img src={type} alt="weather" />
-                {degrees}
+                {degrees}&deg;
             </Typography>
 
         </div>
