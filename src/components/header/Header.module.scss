@@ -1,9 +1,17 @@
 .header-wrapper {
-background-color: salmon;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-inline: 2rem;
+    display: flex;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.left {
+    display: block;
 }
 
 .left {
