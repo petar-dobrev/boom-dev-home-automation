@@ -1,6 +1,7 @@
 .header-wrapper {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -8,6 +9,8 @@
     justify-content: space-between;
     align-items: center;
     padding-inline: 2rem;
+    width: 70vw;
+
 }
 
 .left {
