@@ -1,0 +1,7 @@
+@use "../../styles/colors.scss";
+
+
+.list-item-heading {
+    color: colors.$primary_main;
+    background-color: colors.$secondary_main_translucent;
+}
