@@ -1,0 +1,14 @@
+@use "../../styles/colors.scss";
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 183px;
+    width: 243px;
+    background-color: colors.$secondary_main_translucent;
+}
+
+.outlined {
+    border: 2px solid colors.$primary_main;
+}
