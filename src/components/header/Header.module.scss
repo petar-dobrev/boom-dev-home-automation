@@ -1,0 +1,27 @@
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    width: 70vw;
+
+}
+
+.left {
+    display: block;
+}
+
+.left {
+    display: block;
+}
+
+.right {
+    display: flex;
+    gap: 2rem;
+}

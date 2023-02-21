@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    background: #c33c8c;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba($color: #000000, $alpha: 1.0);
+}
+
+.progress {
+    transform: rotate(180deg) !important;
+    display: inline-flex;
+}
+
+.temperature {
+    font-size: 100px;
+    color: white;
+    display: inline-block;
+}
+
+.add {
+    color: white;
+}
+
+.remove {
+    color: white;
+}
