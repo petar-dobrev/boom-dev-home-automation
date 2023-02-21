@@ -5,11 +5,11 @@ import { Card as MUICard } from "@mui/material";
 
 import styles from "./Card.module.scss";
 
-export default function Card({ iconUrl, outlined = "false" }) {
+export default function Card({ iconUrl, outlined = false }) {
   return (
     <div className={classNames(styles.card)}>
       <MUICard
-        className={outlined && styles.outlined}
+        className={outlined ? styles.outlined : ""}
         sx={{
           display: "flex",
           alignItems: "center",
